@@ -3,7 +3,7 @@
   "name": "Mz Mz Protobuf Parser",
   "version": "1.0.0",
   "description": "Decode and inspect Protocol Buffer (protobuf) binary data without a schema. Paste hex, Base64 or raw bytes and explore the parsed fields.",
-  "homepage_url": "https://github.com/your-username/protobuf-parser-ext",
+  "homepage_url": "https://github.com/pereradrian/MzMzProtobufParser",
   "icons": {
     "48": "icon-48.png",
     "96": "icon-96.png"
@@ -19,7 +19,7 @@
   "permissions": [],
   "browser_specific_settings": {
     "gecko": {
-      "id": "protobuf-parser@extension",
+      "id": "mz-mz-protobuf-parser@extension",
       "strict_min_version": "142.0",
       "data_collection_permissions": {
         "required": ["none"],
