@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protobuf Parser</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <img src="icon-48.png" alt="Protobuf Parser" class="logo" />
+    <h1>Protobuf Parser</h1>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <label for="input-data">Paste protobuf data (hex, Base64, or raw bytes):</label>
+      <textarea
+        id="input-data"
+        placeholder="e.g.  0a 05 68 65 6c 6c 6f  or  CgVoZWxsbw=="
+        spellcheck="false"
+        autocomplete="off"
+      ></textarea>
+      <div class="controls">
+        <button id="btn-parse">Parse</button>
+        <button id="btn-clear" class="secondary">Clear</button>
+        <span id="format-badge" class="badge hidden"></span>
+      </div>
+    </section>
+
+    <section id="output-section" class="output-section hidden">
+      <div class="output-header">
+        <span class="output-title">Decoded fields</span>
+        <button id="btn-copy" class="icon-btn" title="Copy JSON">Copy JSON</button>
+      </div>
+      <div id="tree-container"></div>
+    </section>
+
+    <section id="error-section" class="error-section hidden">
+      <p id="error-msg"></p>
+    </section>
+  </main>
+
+  <script src="protobuf.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
